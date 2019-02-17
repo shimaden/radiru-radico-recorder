@@ -12,6 +12,9 @@
 ## インストール
   rec_radiko.sh については、station_xml_dl.rb がシェル変数 BIN_DIR に置かれるようにする必要があります。
 
+## 注意点
+　cron 等で呼び出すときは、環境変数を適切に設定して呼び出さないと正しく録音できないかもしれません。
+
 ## 参考
   https://memorandum.yamasnet.com/archives/Post-18550.html  
   https://gist.github.com/riocampos/93739197ab7c765d16004cd4164dca73
