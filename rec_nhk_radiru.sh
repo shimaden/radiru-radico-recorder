@@ -58,11 +58,14 @@ OUT_FNAME="$OUTDIR/$PREFIX${STATION}_$DATE.$EXT"
 
 
 if [ "$STATION" = "NHKR1" ]; then
-   STREAM_URL="https://nhkradioakr1-i.akamaihd.net/hls/live/511633/1-r1/1-r1-01.m3u8"
+   #STREAM_URL="https://nhkradioakr1-i.akamaihd.net/hls/live/511633/1-r1/1-r1-01.m3u8"
+   STREAM_URL="https://radio-stream.nhk.jp/hls/live/2023229/nhkradiruakr1/master.m3u8"
 elif [ "$STATION" = "NHKR2" ]; then
-   STREAM_URL="https://nhkradioakr2-i.akamaihd.net/hls/live/511929/1-r2/1-r2-01.m3u8"
+   #STREAM_URL="https://nhkradioakr2-i.akamaihd.net/hls/live/511929/1-r2/1-r2-01.m3u8"
+   STREAM_URL="https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
 elif [ "$STATION" = "NHKFM" ]; then
-   STREAM_URL="https://nhkradioakfm-i.akamaihd.net/hls/live/512290/1-fm/1-fm-01.m3u8"
+   #STREAM_URL="https://nhkradioakfm-i.akamaihd.net/hls/live/512290/1-fm/1-fm-01.m3u8"
+   STREAM_URL="https://radio-stream.nhk.jp/hls/live/2023507/nhkradiruakfm/master.m3u8"
 else
   echo "誤った放送局名: \"$STATION\"放送局名は NHKR1|NHKR2|NHKFM のみです。" 1>&2
   exit 1
